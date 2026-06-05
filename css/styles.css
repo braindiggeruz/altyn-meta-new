@@ -214,6 +214,44 @@ main, header, footer, section { position: relative; z-index: 2; }
   .hero-visual { order: -1; max-height: 520px; aspect-ratio: 4/5; }
 }
 
+/* ============== Mobile-first hero (≤768px) ============== */
+.h1-mobile { display: none; }
+.h1-desktop { display: inline; }
+
+@media (max-width: 768px) {
+  .nav { padding: 14px 0; }
+  .brand { font-size: 1.1rem; letter-spacing: 0.14em; }
+  .brand-mark { width: 22px; height: 22px; }
+
+  .hero { padding: 22px 0 56px; gap: 26px; }
+  /* text first, image after CTA */
+  .hero-text { order: 0; }
+  .hero-visual { order: 1; max-height: 42vh; aspect-ratio: 4 / 3; }
+  .hero-visual img { object-position: 60% 22%; }
+
+  .h1-mobile { display: block; }
+  .h1-desktop { display: none; }
+
+  .hero-eyebrow { margin-bottom: 14px; font-size: 0.72rem; letter-spacing: 0.18em; }
+  .hero h1 {
+    font-size: clamp(2rem, 9.5vw, 2.7rem);
+    line-height: 1.06;
+    margin-bottom: 16px;
+    letter-spacing: -0.015em;
+  }
+  .hero-sub { font-size: 0.98rem; line-height: 1.5; margin-bottom: 20px; max-width: 100%; }
+
+  .offer-line {
+    padding: 10px 14px; font-size: 0.82rem; gap: 8px;
+    margin-bottom: 22px; width: 100%; justify-content: center;
+  }
+
+  .cta-row { width: 100%; flex-direction: column; gap: 12px; align-items: stretch; }
+  .cta-row .btn { width: 100%; padding: 14px 22px; font-size: 0.94rem; }
+
+  .hero-disclaimer { margin-top: 16px; font-size: 0.78rem; text-align: center; }
+}
+
 /* ============== SECTION HEADER ============== */
 .section { padding: 90px 0; border-top: 1px solid var(--line-faint); }
 .section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
