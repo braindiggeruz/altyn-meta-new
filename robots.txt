@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /go/
+
+# Meta / Facebook crawlers explicitly allowed
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+Sitemap: https://altyn-meta-new.pages.dev/sitemap.xml

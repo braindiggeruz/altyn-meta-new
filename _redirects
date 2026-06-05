@@ -1,0 +1,6 @@
+# Clean URL fallbacks — make sure /privacy, /terms, etc (without trailing slash) work
+/privacy            /privacy/            301
+/terms              /terms/              301
+/contact            /contact/            301
+/disclaimer        /disclaimer/         301
+/go/telegram        /go/telegram/        301

@@ -1,0 +1,24 @@
+# Secrets / env — never commit
+.env
+.env.*
+*.local
+.dev.vars
+
+# wrangler / Cloudflare
+.wrangler/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Build outputs (this repo deploys source directly)
+dist/
+build/
